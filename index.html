@@ -3,8 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <title>Nadav's Resume</title>
+  <style>
+    body, html {
+      margin: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    #download-btn {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+  </style>
 </head>
-<body style="margin: 0;">
-  <iframe src="https://docs.google.com/gview?url=https://raw.githubusercontent.com/nadavilder/Resume/main/Nadav%20VIlder%20Resume.pdf&embedded=true" style="width:100%; height:100vh; border: none;"></iframe>
+<body>
+  <iframe src="https://docs.google.com/gview?url=https://raw.githubusercontent.com/nadavilder/Resume/main/Nadav%20VIlder%20Resume.pdf&embedded=true"></iframe>
+  <a id="download-btn" href="https://raw.githubusercontent.com/nadavilder/Resume/main/Nadav%20VIlder%20Resume.pdf" download="Nadav Vilder Resume.pdf">Download PDF</a>
 </body>
 </html>
